@@ -13,7 +13,7 @@ BTREE insert(BTREE root, int x) {
     if (root == NULL) {
         BTREE new_node = malloc(sizeof(struct node));
         new_node->left = new_node->right = NULL;
-        new_node->data = x;
+        new_node->data = 2*x;
         return new_node;
     }
     if (root->data < x) {
